@@ -1,10 +1,11 @@
 services:
 - type: web
-  name: red-flags-frontend-staging
-  env: static
-  buildCommand: yarn; yarn build; yarn next export
-  staticPublishPath: out
-  pullRequestPreviewsEnabled: true     # optional
+  name: red_flags_frontend
+  env: node
+  plan: starter
+  buildCommand: yarn; yarn build
+  startCommand: yarn start
+  autoDeploy: false
   envVars:
   - key: NODE_ENV
-    value: staging
+    value: production
