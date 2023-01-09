@@ -7,4 +7,4 @@ services:
   pullRequestPreviewsEnabled: true     # optional
   envVars:
   - key: NODE_ENV
-    value: production
+    value: staging
